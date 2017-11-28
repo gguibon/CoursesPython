@@ -1,17 +1,17 @@
 wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py 
 
-python get-pip.py --user
+python3 get-pip.py --user
 
 echo "PATH=\$PATH:~/.local/bin" >> ~/.bashrc
 
 source ~/.bashrc
 
-pip install --user "ipython[all]"
-pip install --user "ipython[notebook]"
-pip install --user scikit-learn
-pip install --user ipython
-pip install --user scipy
-pip install --user numpy
-pip install --user lxml
+pip3 install --user "ipython[all]"
+pip3 install --user "ipython[notebook]"
+pip3 install --user scikit-learn
+pip3 install --user ipython
+pip3 install --user scipy
+pip3 install --user numpy
+pip3 install --user lxml
 
 jupyter notebook
